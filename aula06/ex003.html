@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 002</title>
+    <style>
+        body{
+            background-color: rgb(74, 74, 218);
+            color: white;
+
+        }
+        h1{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livei da maldição!</p>
+
+    <script>
+        let n1 = window.prompt(`Digite o primeiro número: `)
+        let n2 = window.prompt('Digite o segundo número: ')
+        let soma = Number.parseFloat(n1) + Number.parseFloat(n2) /* O window.alert retorna o valor que foi colocado como uma string, ou seja, uma palavra, por isso que se a gente usar let soma = n1 + n2, em vez de somar, ele vai concatenar, e para ele somar usando o + devemos transformar a string que foi recebida em number, fazemos isso usando Number.parseFloat, para números reais ou Number.parseInt para números inteiros, outra forma que podemos fazer é o Number(nomeDaVariavel) dessa forma quem fica encarregado de dizer se é número inteiro ou real, é o próprio javascript de forma automática. */
+        window.alert(`A soma dos números digitados é: ${soma}`) 
+
+        /* Segunda forma de fazer esse código 
+        let n3 = Number.parseFloat(window.prompt(`Digite o primeiro número: `))
+        let n4 = Number.parseFloat(window.prompt(`Digite o segundo número: `))
+        let soma2 = window.alert(n3 + n4) */
+
+        /* Se quiser comverter de número para string a gente pode usar o string(nomeDaVariavel) ou podemos usar o nomeDaVariavel.toString(), também temos outras como:
+        nomeDaVariavel.length que vai contar o número de letras que tem aquela váriavel
+        nomeDaVariavel.toUpperCase() que vai transformar a variavel toda para letra maiúscula
+        nomeDaVariavel.toLowerCase() que vai transformar a variavel toda para letra minúscula
+        */
+
+        /* nomeDaVariavel.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) esse código faz aparecer o tipo da moeda e também divide com . e virgulas os valores*/ 
+        
+
+    </script>
+    
+</body>
+</html> 

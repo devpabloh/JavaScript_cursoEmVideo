@@ -6,10 +6,22 @@
     <title>Exercicio 009 </title>
 </head>
 <body>
-    
+    <h1>Somando valores</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="somar" onclick="somar()"> <!-- O método onclick pode ser usado direto no html, mas é pouco encorajado, o mais interessante seria no javascript escrever da seguinte forma-->
+    <div id="res">Resultado</div>
 
     <script>
-
+        function somar(){
+            let tn1 = window.document.getElementById('txtn1') // primeira forma, selecionando através do  ID
+            let tn2 = window.document.querySelector('input#txtn2') // segunda forma, selecionado através da tag + id ou seletor
+            let res = window.document.getElementById('res')
+            let n1 = Number.parseFloat(tn1.value) // transformando a string que vai ser recebida como dado digitado pelo usuário para number, usando a forma completa Number.parseFloat(aqui vai a variavel, e o dado que queremos pegar nela)
+            let n2 = Number(tn2.value) // também transformando string em number, só que agora estamos usando a forma reduzida e deixando o javaScript definir se é parseFloat (número real) ou ParseInt (número inteiro)
+            let s = n1 + n2
+            res.innerHTML = s
+        } 
     </script>
     
 </body>

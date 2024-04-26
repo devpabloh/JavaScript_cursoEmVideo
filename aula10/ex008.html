@@ -17,9 +17,27 @@
     </style>
 </head>
 <body>
-    <div id="area">
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()"> <!-- Primeira forma de fazer uma ação pelo javascript. -->
         interaja...
     </div>
-    
+    <script>
+        let a = window.document.getElementById('area')
+        function clicar(){
+            
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+
+        function entrar(){
+            a.innerText = 'Entrou!'
+            a.style.backgroundColor = 'blue'
+        }
+
+        function saiu(){
+            a.innerText = 'Saiu! Teu cu.'
+            a.style.backgroundColor = 'black'
+            a.style.color = 'white'
+        }
+    </script>
 </body>
 </html>

@@ -17,11 +17,16 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()"> <!-- Primeira forma de fazer uma ação pelo javascript. -->
+    <div id="area">
         interaja...
     </div>
     <script>
         let a = window.document.getElementById('area')
+
+        a.addEventListener('click', clicar) /* Forma usada para adicionar os eventos javaScript */
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', saiu)
+        
         function clicar(){
             
             a.innerText = 'no!'

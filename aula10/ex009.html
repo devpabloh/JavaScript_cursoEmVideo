@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio 009 </title>
+    <style>
+        body{
+            font: normal 18pt arial;
+        }
+        input{
+            font: normal 18pt arial;
+            width: 100px;
+        }
+
+        div#res{
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>Somando valores</h1>
@@ -20,7 +33,7 @@
             let n1 = Number.parseFloat(tn1.value) // transformando a string que vai ser recebida como dado digitado pelo usuário para number, usando a forma completa Number.parseFloat(aqui vai a variavel, e o dado que queremos pegar nela)
             let n2 = Number(tn2.value) // também transformando string em number, só que agora estamos usando a forma reduzida e deixando o javaScript definir se é parseFloat (número real) ou ParseInt (número inteiro)
             let s = n1 + n2
-            res.innerHTML = s
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual à <strong>${s}</strong>`
         } 
     </script>
     

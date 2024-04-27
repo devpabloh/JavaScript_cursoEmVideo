@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 012</title>
+    <title>DETRAN</title>
 </head>
 <body>
-
-    
-
+    <h1>Sistema de multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
 
     <script>
-        
+
+        function calcular(){
+            let txtv = window.document.getElementById('txtvel')
+            var res = window.document.getElementById('res')
+            let vel = Number(txtv.value)
+            res.innerHTML = `Sua velocidade atual é de ${vel} Km/h`
+        }
+
     </script>
 </body>
 </html>

@@ -1,5 +1,9 @@
-let hora = 10
+let hora = 20
 
-if(){
-    
+if(hora < 12){
+    console.log('Bom dia! Good Morning!')
+}else if(hora <= 18){
+    console.log('Boa tarde! Good Afternoon!')
+}else{
+    console.log('Boa noite! Good night!')
 }

@@ -1,4 +1,5 @@
-let hora = 20
+let agora = new Date() // Usado para pegar a hora
+let hora = agora.getHours() //getHours() puxa a hora que está no seu computador
 
 if(hora < 12){
     console.log('Bom dia! Good Morning!')

@@ -3,7 +3,6 @@ function carregar(){
     let img = window.document.getElementById('imagem')
     let data = new Date()
     let horarioAtual = data.getHours()
-    horarioAtual = 20
 
     msg.innerHTML = `Agora são ${horarioAtual} horas.`
 

@@ -18,11 +18,14 @@ function verificar(){
         if(fsex[0].checked){
             genero = 'Homem'
             if(idade >= 0 && idade < 12){
-                img.src = ''
-            }else if(idade > 12 && idade < 18){
-                img.src = ''
+                img.setAttribute('src', '/aula13ex/imagens/homem/menino.jpg')
+                
+            }else if(idade >= 12 && idade < 18){
+                img.src = '/aula13ex/imagens/homem/adolescente.jpg'
+            }else if(idade >= 18 && idade < 60){
+                img.src = '/aula13ex/imagens/homem/homem adulto.jpg'
             }else{
-                img.src = ''
+                img.src = '/aula13ex/imagens/homem/homem idoso.jpg'
             }
 
         }else if(fsex[1].checked){
@@ -39,5 +42,6 @@ function verificar(){
         }
         res.style.textAlign = 'center'
         res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
+        res.appendChild(img)
     }
 }

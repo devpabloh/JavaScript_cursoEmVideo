@@ -29,7 +29,9 @@ function verificar(){
             genero = 'Mulher'
             if(idade >= 0 && idade < 12){
                 img.src = ''
-            }else if(idade > 12 && idade < 18){
+            }else if(idade >= 12 && idade < 18){
+                img.src = ''
+            }else if(idade >= 18 && idade < 60){
                 img.src = ''
             }else{
                 img.src = ''

@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(30, 163, 230);
+    text-align: center;
+}
+
+.container{
+    background-color: white;
+    border-radius: 8px;
+    height: 300px;
+    width: 600px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+p{
+    
+}

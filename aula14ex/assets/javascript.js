@@ -8,11 +8,14 @@ function contar(){
         window.alert('[Error] Informe os dados necessários.')
         res.innerHTML = 'Impossível realizar a contagem'
     }else{
-        res.innerHTML = 'Contando:'
+        res.innerHTML = 'Contando: <br>'
         let i = Number(ini.value)
         let f = Number(fim.value)
         let p = Number(passo.value)
-
+        if(p <= 0){
+            window.alert('Passo invalido! Iremos considerar o Passo = 1')
+            p = 1
+        }
         if(i < f){
             for(let c = i; c <= f; c += p){
                 res.innerHTML += `${c} \u{1F449}`

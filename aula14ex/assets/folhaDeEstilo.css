@@ -1,17 +1,25 @@
 body{
     background-color: rgb(30, 163, 230);
+    
+}
+
+header{
+    color: white;
     text-align: center;
 }
 
 .container{
     background-color: white;
-    border-radius: 8px;
-    height: 300px;
+    border-radius: 10px;
     width: 600px;
     margin: auto;
-    padding-top: 20px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.511);
 }
 
-p{
-    
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
 }

@@ -1,11 +1,11 @@
 function contar(){
-    let inc = document.getElementById("txtInc")
-    let fim = document.getElementById("txtFim")
-    let passo = document.getElementById("txtPasso")
+    let ini = document.getElementById('txti')    
+    let fim = document.getElementById('txtf')
+    let passo = document.getElementById('txtp')
 
-    if(inc.value.length  == 0 || fim.value.length == 0 || passo.value.length == 0){
-        window.alert('[Erro] Faltam dados.')
+    if(ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
+        window.alert('[Error] Informe os dados necessários.')
     }else{
-        window.alert('Tudo ok!')
+        window.alert('Está tudo Ok')
     }
 }

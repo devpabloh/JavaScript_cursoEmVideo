@@ -14,21 +14,13 @@
     <section>
         <div class="container">
             <div id="dados">
-                <p>
-                    <label for="inc">Inicio: </label>
-                    <input type="text" name="txtInc" id="txtInc">
-                </p>
-                <p>
-                    <label for="fim">Fim: </label>
-                    <input type="text" name="txtFim" id="txtFim">
-                </p>
-                <p>
-                    <label for="Passo">Passo: </label>
-                    <input type="text" name="txtPasso" id="txtPasso">
-                </p>
+                <p>Inicio: <input type="text" name="inicio" id="txtInc"></p>
+                <p>Fim: <input type="text" name="Fim" id="txtFim"></p>
+                <p>Passo: <input type="text" name="txtPasso" id="txtPasso"> </p>
+                <p> <input type="button" value="Contar" onclick="contar()"></p>
             </div>
 
-            <input type="button" value="Contar">
+           
 
             <div id="res">
                 <p>Preparando a contagem...</p>

@@ -6,10 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    <img src="imagens/Black Minimal Motivation Quote LinkedIn Banner.png" alt="" class="img">
-    <input type="button" value="trocar" class="botao" onclick="contar()">
+    <img src="imagens/Black Minimal Motivation Quote LinkedIn Banner.png" alt="" class="imagem">
+    <input type="button" value="trocar" class="botao" onclick="trocarImagem()">
 
-    <script src="testes.js"></script>
+    <script>
+        function trocarImagem(){
+    
+    var imagem = document.getElementsByClassName('imagem');
+
+    var srcAtual = imagem.getAttribute('src');
+
+    if(srcAtual == "imagens/Black Minimal Motivation Quote LinkedIn Banner.png"){
+        imagem.setAttribute('src', '/testes/imagens/icons8-react-native-500.png')
+
+    }else{
+        imagem.setAttribute('src', '/testes/imagens/js.png')
+    }
+
+
+}
+    </script>
     
 </body>
 </html>
